@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const API_URL = process.env.REACT_APP_API_URL + "/api";
+// const API_URL = process.env.REACT_APP_API_URL + "/api";
+const API_URL = "https://notes-app-backend-bq7m.onrender.com" + "/api";
 
 export const registerUser = async (userData) => axios.post(`${API_URL}/auth/register`, userData);
 export const loginUser = async (userData) => axios.post(`${API_URL}/auth/login`, userData);
